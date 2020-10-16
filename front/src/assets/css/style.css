@@ -2,3 +2,12 @@
     font-family: "TRY Clother Black";
     src: url("./../fonts/try-clother-black.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Uni Sans Heavy CAPS";
+    src: url("./../fonts/Uni Sans Heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: "Bebas Neue-Bold";
+    src: url("./../fonts/BebasNeue-Bold.otf") format("opentype");
+}
+
