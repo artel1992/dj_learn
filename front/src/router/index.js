@@ -3,10 +3,10 @@ import VueRouter from "vue-router";
 import Main from "../components/Main";
 
 Vue.use(VueRouter)
-
+//
 const routes = [
     {
-        path: '/main',
+        path: '/',
         name: 'Main',
         component: Main
     }

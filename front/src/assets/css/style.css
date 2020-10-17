@@ -2,12 +2,152 @@
     font-family: "TRY Clother Black";
     src: url("./../fonts/try-clother-black.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Uni Sans Heavy CAPS";
     src: url("./../fonts/Uni Sans Heavy.otf") format("opentype");
 }
+
 @font-face {
     font-family: "Bebas Neue-Bold";
     src: url("./../fonts/BebasNeue-Bold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "SocialicoPlus-Plus";
+    src: url("./../fonts/SocialicoPlus-Plus.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Socialico-Regular";
+    src: url("./../fonts/Socialico-Regular.otf") format("opentype");
+}
+
+
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+}
+
+
+.ml-auto {
+    /*background-color: #42b983;*/
+}
+
+.dropdown-toggle {
+
+}
+
+.carousel {
+    font-family: "Bebas Neue-Bold", sans-serif;
+}
+
+.background {
+    /*background-color: black;*/
+}
+
+.form-control-sm {
+    border-radius: 50px;
+}
+
+.navbar-brand {
+    font-family: "Bebas Neue-Bold", sans-serif;
+    font-size: 18pt;
+}
+
+.nav-link {
+    font-family: "Bebas Neue-Bold", sans-serif;
+    font-size: 20pt;
+    color: white !important;
+
+}
+
+.navbar {
+    /*background-color: rgba(0, 0, 0, 0) !important;*/
+    position: absolute;
+    top: 0;
+    z-index: 99999999;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+div {
+    /*background-color: transparent !important;*/
+}
+
+.nav-item {
+    font-family: "Bebas Neue-Bold", sans-serif;
+    font-size: 18pt;
+}
+
+.mr-sm-2 {
+    font-family: "TRY Clother Black", sans-serif;
+    font-size: 12pt;
+    background-color: transparent !important;
+    color: white !important;
+
+}
+
+.mr-sm-2:focus::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.mr-sm-2::placeholder {
+    color: white;
+
+}
+
+.mr-sm-2:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid white;
+}
+
+.dropdown menu {
+    /*font-family: "TRY Clother Black", sans-serif;*/
+}
+
+/*.navbar-collapse {*/
+/*    justify-content: center;*/
+/*    display: flex;*/
+/*    flex-grow: unset;*/
+/*}*/
+
+/*.navbar-brand {*/
+/*    padding-left: 550px;*/
+/*}*/
+body::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 100px;
+}
+
+.social-icon {
+    font-family: "Socialico-Regular";
+    font-size: 40pt;
+}
+.si-f {
+    color: #395a9a;
+}
+.social-icon-plus {
+    font-family: SocialicoPlus-Plus;
+    font-size: 40pt;
+}
