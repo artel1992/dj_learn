@@ -1,10 +1,7 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark" variant="secondary" class="navbar" @scroll="getNavClass" sticky>
-            <b-navbar-brand href="#" class="hidden-sm-and-down">
-                <img src="../assets/Mercedes-Benz/merslogo.png" height="100" width="100"/>
-            </b-navbar-brand>
-            <b-navbar-brand class="hidden-md-and-up">
+            <b-navbar-brand href="#">
                 <img src="../assets/Mercedes-Benz/merslogo.png" height="50" width="50"/>
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -20,38 +17,28 @@
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <b-nav-form>
-                        <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+                        <b-form-input size="sm" class="mr-sm-3" placeholder="Search"></b-form-input>
                     </b-nav-form>
                     <b-nav-item>
-                        <i class="el-icon-shopping-bag-2"></i>
+                        <el-button circle plain icon="el-icon-goods"
+                                   style="border: 0 solid; background: none; font-size: 1em;">
+                        </el-button>
                     </b-nav-item>
                     <b-nav-item>
-                        <i class="el-icon-user"></i>
+                        <el-button v-b-modal.login icon="el-icon-user"
+                                   style="border: 0 solid; background: none; font-size: 1em;">
+                        </el-button>
                     </b-nav-item>
-                    <!--                <b-nav-item-dropdown right no-caret>-->
-                    <!--                    <template v-slot:button-content>-->
-                    <!--                        <b-icon icon="box-arrow-in-right"></b-icon>-->
-                    <!--                    </template>-->
-                    <!--                    <b-dropdown-item href="#">-->
-                    <!--                        <b-icon icon="person-circle"></b-icon>-->
-                    <!--                        Profile-->
-                    <!--                    </b-dropdown-item>-->
-                    <!--                    <b-dropdown-item href="#">-->
-                    <!--                        <b-icon icon="box-arrow-in-left"></b-icon>-->
-                    <!--                        Sign Out-->
-                    <!--                    </b-dropdown-item>-->
-                    <!--                </b-nav-item-dropdown>-->
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
         <b-carousel
                 id="carousel-fade"
-                style="text-shadow: 0px 0px 2px #000"
                 fade
                 :indicators="false"
                 img-width="1024"
                 img-height="480"
-                :interval="3000"
+                :interval="4000"
         >
             <b-carousel-slide
                     :img-src="require('./../assets/Mercedes-Benz/C-class.jpeg')"
@@ -63,16 +50,23 @@
                     :img-src="require('./../assets/Mercedes-Benz/G-class3.jpeg')"
             ></b-carousel-slide>
         </b-carousel>
+        <Login id="login"></Login>
     </div>
+
 </template>
 
 <script>
+    import Login from "./Modal/Login";
+
     export default {
         name: '',
         data() {
             return {
                 nav_class: 'navbar'
             }
+        },
+        components: {
+            Login
         },
         props: {
             msg: String

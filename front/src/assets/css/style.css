@@ -12,6 +12,10 @@
     font-family: "Bebas Neue-Bold";
     src: url("./../fonts/BebasNeue-Bold.otf") format("opentype");
 }
+@font-face {
+    font-family: "Bebas Neue-Regular";
+    src: url("./../fonts/BebasNeue-Regular.otf") format("opentype");
+}
 
 @font-face {
     font-family: "SocialicoPlus-Plus";
@@ -21,6 +25,10 @@
 @font-face {
     font-family: "Socialico-Regular";
     src: url("./../fonts/Socialico-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "LeagueSpartan-Bold";
+    src: url("./../fonts/LeagueSpartan-Bold.otf") format("opentype");
 }
 
 
@@ -63,23 +71,36 @@
 
 .navbar-brand {
     font-family: "Bebas Neue-Bold", sans-serif;
-    font-size: 18pt;
+    font-size: 12pt;
 }
 
 .nav-link {
     font-family: "Bebas Neue-Bold", sans-serif;
     font-size: 20pt;
-    color: white !important;
+    /*color: white !important;*/
 
 }
 
 .navbar {
-    /*background-color: rgba(0, 0, 0, 0) !important;*/
-    position: absolute;
-    top: 0;
-    z-index: 99999999;
-    width: 100%;
     background-color: transparent !important;
+     width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-collapse:after {
+    /*content: "";*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*background: transparent;*/
+    /*background-image: linear-gradient(180deg, #ffffff, #000000);*/
+    /*opacity: 0.9;*/
+    font-size: 10pt;
 }
 
 div {
@@ -91,24 +112,24 @@ div {
     font-size: 18pt;
 }
 
-.mr-sm-2 {
-    font-family: "TRY Clother Black", sans-serif;
+.mr-sm-3 {
+    font-family: "FontAwesome", sans-serif;
     font-size: 12pt;
-    background-color: transparent !important;
+    /*background-color: transparent !important;*/
     color: white !important;
 
 }
 
-.mr-sm-2:focus::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+.mr-sm-3:focus::placeholder {
+    color: rgba(67, 67, 67, 0.5);
 }
 
-.mr-sm-2::placeholder {
-    color: white;
+.mr-sm-3::placeholder {
+    /*color: #292828;*/
 
 }
 
-.mr-sm-2:focus {
+.mr-sm-3:focus {
     outline: none !important;
     box-shadow: none !important;
     border: 1px solid white;
@@ -127,27 +148,54 @@ div {
 /*.navbar-brand {*/
 /*    padding-left: 550px;*/
 /*}*/
-body::-webkit-scrollbar {
-    width: 0.8em;
-}
+/*body::-webkit-scrollbar {*/
+/*    width: 0.8em;*/
+/*}*/
 
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 255);
-}
+/*body::-webkit-scrollbar-track {*/
+/*    box-shadow: inset 0 0 10px rgba(0, 0, 0, 255);*/
+/*}*/
 
-body::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 100px;
-}
+/*body::-webkit-scrollbar-thumb {*/
+/*    background-color: white;*/
+/*    border-radius: 100px;*/
+/*}*/
 
 .social-icon {
     font-family: "Socialico-Regular";
     font-size: 40pt;
 }
+
 .si-f {
     color: #395a9a;
 }
+
 .social-icon-plus {
     font-family: SocialicoPlus-Plus;
     font-size: 40pt;
 }
+
+/*.preloader {*/
+/*    position: fixed !important;*/
+/*    left: 0 !important;*/
+/*    top: 0 !important;*/
+/*    width: 100% !important;*/
+/*    height: 100% !important;*/
+/*    background: black !important;*/
+/*    z-index: 999999 !important;*/
+/*}*/
+/*.loader {*/
+/*    width: 75px !important;*/
+/*    height: 75px !important;*/
+/*    border: 10px solid white !important;*/
+/*    border-radius: 50%;*/
+/*    border-top-color: red !important;*/
+/*    image-orientation: from-image;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    color: aliceblue;*/
+/*    font-family: "Bebas Neue-Bold", sans-serif;*/
+/*    font-size: 50pt;*/
+
+/*}*/

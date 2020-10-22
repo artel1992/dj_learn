@@ -1,8 +1,8 @@
 <template>
     <div class="background">
         <Header></Header>
-                <router-view></router-view>
-                <Footer></Footer>
+        <router-view></router-view>
+        <Footer></Footer>
     </div>
 </template>
 <script>
