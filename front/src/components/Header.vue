@@ -21,12 +21,12 @@
                     </b-nav-form>
                     <b-nav-item>
                         <el-button circle plain icon="el-icon-goods"
-                                   style="border: 0 solid; background: none; font-size: 1em;">
+                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; touch-action: auto;color: white">
                         </el-button>
                     </b-nav-item>
                     <b-nav-item>
                         <el-button v-b-modal.login icon="el-icon-user"
-                                   style="border: 0 solid; background: none; font-size: 1em;">
+                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; color: white;">
                         </el-button>
                     </b-nav-item>
                 </b-navbar-nav>

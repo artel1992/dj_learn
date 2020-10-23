@@ -30,7 +30,9 @@
     font-family: "LeagueSpartan-Bold";
     src: url("./../fonts/LeagueSpartan-Bold.otf") format("opentype");
 }
-
+.el-button:focus, .el-button:hover {
+    color: red;
+}
 
 .el-carousel__item h3 {
     color: #475669;
@@ -199,3 +201,25 @@ div {
 /*    font-size: 50pt;*/
 
 /*}*/
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+   background-color: #696969 !important;
+    border-color: #696969 !important;
+    box-shadow: #696969 !important;
+}
+.el-radio-button__inner:hover {
+    color: black !important;
+}
+.el-radio-button__orig-radio:checked+.el-radio-button__inner {
+    box-shadow: 1px 0 0 0 #696969 !important;
+}
+.el-button--primary {
+    outline: 0 !important;
+    background-color: darkgray !important;
+    border-color: darkgray !important;
+    justify-content: center !important;
+    display: flex !important;
+    vertical-align: center !important;
+}
+.el-button--primary:hover {
+    background-color: #696969 !important;
+}

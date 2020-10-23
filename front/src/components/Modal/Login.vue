@@ -10,20 +10,27 @@
                             <el-radio-button label="registration">Registration</el-radio-button>
                         </el-radio-group>
                         <div style="margin: 20px;"></div>
-                        <el-form v-if="labelPosition==='login'" :label-position="labelPosition" label-width="100px"
+                        <el-form v-if="labelPosition==='login'" label-width="100px"
                                  :model="formLogin">
-                            <el-form-item label="Login" prop="username">
+                            <el-form-item label="Login:" prop="username">
                                 <el-input v-model="formLogin.username"></el-input>
                             </el-form-item>
-                            <el-form-item label="Password">
+                            <el-form-item label="Password:">
                                 <el-input type="password" v-model="formLogin.password"></el-input>
                             </el-form-item>
-                            <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                            <el-row justify="center" type="flex">
+                                <el-col align="center" :span="6">
+                                    <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                                </el-col>
+                            </el-row>
                         </el-form>
-                        <el-form v-if="labelPosition==='registration'" :label-position="labelPosition"
+                        <el-form v-if="labelPosition==='registration'"
                                  label-width="100px" :model="formRegistration">
                             <el-form-item label="Login:" prop="username">
                                 <el-input v-model="formLogin.username"></el-input>
+                            </el-form-item>
+                            <el-form-item label="Phone:" prop="phone">
+                                <el-input type="phone" v-model="formLogin.phone"></el-input>
                             </el-form-item>
                             <el-form-item label="Password:" prop="password">
                                 <el-input type="password" v-model="formLogin.password"></el-input>
@@ -31,10 +38,11 @@
                             <el-form-item label="Re-Password:" prop="re-password">
                                 <el-input type="password" v-model="formLogin.re_password"></el-input>
                             </el-form-item>
-                            <el-form-item label="Tel:" prop="phone">
-                                <el-input type="phone" v-model="formLogin.phone"></el-input>
-                            </el-form-item>
-                            <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                            <el-row justify="center" type="flex">
+                                <el-col align="center" :span="6">
+                                    <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                                </el-col>
+                            </el-row>
                         </el-form>
                     </el-col>
                 </el-row>
@@ -85,7 +93,7 @@
         font-family: "TRY Clother Black", sans-serif;
     }
 
-    .el-button--primary {
-        font-family: "TRY Clother Black";
-    }
+    /*.el-button--primary {*/
+    /*    !*font-family: "TRY Clother Black";*!*/
+    /*}*/
 </style>

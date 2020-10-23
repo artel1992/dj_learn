@@ -11,7 +11,7 @@
 <!--                    <span class="social-icon" style="color: #ff0000">x</span>-->
                 </el-col>
             </el-row>
-            <el-row type="flex" justify="center" class="hidden-md-and-up" style="font-size: 10pt">
+            <el-row type="flex" justify="center" class="hidden-md-and-up" style="font-size: 10pt; color: #696969 !important;    ">
                 <el-col :lg="14">
                     <p style="text-align: center; font-family: 'Bebas Neue-Bold'">
                         The first Mercedes-Benz brand name vehicles were produced in 1926, following the merger of Karl
@@ -23,7 +23,7 @@
             </el-row>
             <el-row type="flex" justify="center" class="hidden-sm-and-down">
                 <el-col :lg="14">
-                    <p style="text-align: center; font-family: 'Bebas Neue-Bold'">
+                    <p style="text-align: center; font-family: 'Bebas Neue-Bold'; color: #696969">
                         The first Mercedes-Benz brand name vehicles were produced in 1926, following the merger of Karl
                         Benz's and Gottlieb Daimler's companies into the Daimler-Benz company on 28 June of the same
                         year. Gottlieb Daimler was born on 17 March 1834 in Schorndorf.
@@ -33,12 +33,12 @@
             </el-row>
             <el-row type="flex" justify="center" class="hidden-md-and-up" style="font-size: 10pt">
                 <el-col :lg="24">
-                    <p style="text-align: center; font-family: 'Bebas Neue-Bold';">&COPY; 2020. Mercedes-Benz</p>
+                    <p style="text-align: center; font-family: 'Bebas Neue-Bold'; color: #696969">&COPY; 2020. Mercedes-Benz</p>
                 </el-col>
             </el-row>
             <el-row type="flex" justify="center" class="hidden-sm-and-down">
                 <el-col :lg="24">
-                    <p style="text-align: center; font-family: 'Bebas Neue-Bold';">&COPY; 2020. Mercedes-Benz</p>
+                    <p style="text-align: center; font-family: 'Bebas Neue-Bold'; color: #696969">&COPY; 2020. Mercedes-Benz</p>
                 </el-col>
             </el-row>
         </el-col>
