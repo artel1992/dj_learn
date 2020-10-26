@@ -79,16 +79,22 @@
 .nav-link {
     font-family: "Bebas Neue-Bold", sans-serif;
     font-size: 20pt;
-    /*color: white !important;*/
+    color: white !important;
 
 }
-
+.nav-link:hover {
+    color: #d3dce6 !important;
+}
 .navbar {
     background-color: transparent !important;
      width: 100%;
     height: 100px;
     position: fixed;
     z-index: 1000;
+    padding: 0 21%;
+}
+.navbar:hover {
+    background: linear-gradient(180deg, #3f4047, rgba(0,0,0,0));
 }
 
 .navbar-collapse:after {
@@ -113,7 +119,9 @@ div {
     font-family: "Bebas Neue-Bold", sans-serif;
     font-size: 18pt;
 }
-
+.el-icon-user:hover {
+    color: #d3dce6 !important;
+}
 .mr-sm-3 {
     font-family: "FontAwesome", sans-serif;
     font-size: 12pt;

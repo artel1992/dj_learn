@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="dark" variant="secondary" class="navbar" @scroll="getNavClass" sticky>
+        <b-navbar toggleable="lg" type="dark" variant="secondary" class="navbar" sticky>
             <b-navbar-brand href="#">
                 <img src="../assets/Mercedes-Benz/merslogo.png" height="50" width="50"/>
             </b-navbar-brand>
