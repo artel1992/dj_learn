@@ -92,8 +92,4 @@
     h2 {
         font-family: "TRY Clother Black", sans-serif;
     }
-
-    /*.el-button--primary {*/
-    /*    !*font-family: "TRY Clother Black";*!*/
-    /*}*/
 </style>
