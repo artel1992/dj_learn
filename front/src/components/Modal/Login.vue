@@ -69,8 +69,7 @@
                     password: '',
                     re_password: '',
                     phone: '',
-                }
-
+                },
             };
         },
         methods: {
@@ -85,8 +84,9 @@
                 });
             },
             auth() {
-                this.$store.dispatch('login', this.formLogin).catch(error=> {
-                    console.log(error)})
+                this.$store.dispatch('login', this.formLogin).catch(error => {
+                    console.log(error)
+                })
 
             }
         }

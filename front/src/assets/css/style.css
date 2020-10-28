@@ -54,9 +54,19 @@
         z-index: 1000;
         background: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
     }
-
+}
+@media (min-width:  1200px) {
+    .navbar {
+        padding: 0 21%;
+    }
 }
 
+@media (max-width: 768px) {
+    .bg-dark {
+        background-color: black !important;
+
+    }
+}
 
 .el-button:focus, .el-button:hover {
     color: red;
