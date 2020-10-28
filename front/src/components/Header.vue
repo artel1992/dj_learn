@@ -1,38 +1,6 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" type="dark" variant="secondary" class="hidden-md-and-up" sticky>
-            <b-navbar-brand href="#">
-                <img src="../assets/Mercedes-Benz/merslogo.png" height="50" width="50"/>
-            </b-navbar-brand>
-            <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-            <b-collapse id="nav-collapse" is-nav>
-                <b-navbar-nav>
-                    <b-nav-item @click="$router.push({name:'Main'})" href="#">HOME</b-nav-item>
-                </b-navbar-nav>
-                <b-navbar-nav>
-                    <b-nav-item @click="$router.push({name:'Cars'})" href="#">CARS</b-nav-item>
-                </b-navbar-nav>
-                <b-navbar-nav>
-                    <b-nav-item href="#">BENZ WORLD</b-nav-item>
-                </b-navbar-nav>
-                <b-navbar-nav class="ml-auto">
-                    <b-nav-form>
-                        <b-form-input size="sm" class="mr-sm-3" placeholder="Search"></b-form-input>
-                    </b-nav-form>
-                    <b-nav-item>
-                        <el-button circle plain icon="el-icon-goods"
-                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; touch-action: auto;color: white">
-                        </el-button>
-                    </b-nav-item>
-                    <b-nav-item>
-                        <el-button v-b-modal.login icon="el-icon-user"
-                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; color: white;">
-                        </el-button>
-                    </b-nav-item>
-                </b-navbar-nav>
-            </b-collapse>
-        </b-navbar>
-        <b-navbar toggleable="lg" type="dark" variant="secondary" class="hidden-md-and-down" sticky>
+        <b-navbar toggleable="lg" type="dark" variant="secondary" class="navbar" sticky>
             <b-navbar-brand href="#">
                 <img src="../assets/Mercedes-Benz/merslogo.png" height="50" width="50"/>
             </b-navbar-brand>
@@ -85,7 +53,7 @@
                     :img-src="require('./../assets/Photo/Merckarusel.jpg')"
             ></b-carousel-slide>
         </b-carousel>
-        <Login id="login"></Login>
+        <Login modal_id="login"></Login>
         <el-row data-aos="fade-up" justify="center" type="flex">
             <el-col data-aos-delay="5000" :lg="4">
                 <h3 style="font-family: 'Bebas Neue-Regular'; padding-top: 50px">
@@ -141,7 +109,7 @@
         name: '',
         data() {
             return {
-                nav_class: 'navbar'
+                nav_class: 'navbar',
             }
         },
         components: {

@@ -1,5 +1,5 @@
 <template>
-    <b-modal :id="id" centered title="Login" hide-header size="md" hide-footer>
+    <b-modal :id="modal_id" centered title="Login" hide-header size="md" hide-footer>
         <el-row type="flex" justify="center">
             <el-col>
                 <el-row>
@@ -16,11 +16,11 @@
                                 <el-input v-model="formLogin.username"></el-input>
                             </el-form-item>
                             <el-form-item label="Password:">
-                                <el-input type="password" v-model="formLogin.password"></el-input>
+                                <el-input show-password type="password" v-model="formLogin.password"></el-input>
                             </el-form-item>
                             <el-row justify="center" type="flex">
                                 <el-col align="center" :span="6">
-                                    <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
+                                    <el-button type="primary" @click="auth()">Submit</el-button>
                                 </el-col>
                             </el-row>
                         </el-form>
@@ -55,7 +55,7 @@
     export default {
         name: "Login",
         props: {
-            id: String
+            modal_id: String
         },
         data() {
             return {
@@ -84,6 +84,11 @@
                     }
                 });
             },
+            auth() {
+                this.$store.dispatch('login', this.formLogin).catch(error=> {
+                    console.log(error)})
+
+            }
         }
     }
 </script>
