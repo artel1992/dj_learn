@@ -20,7 +20,7 @@
                         <b-form-input size="sm" class="mr-sm-3" placeholder="Search"></b-form-input>
                     </b-nav-form>
                     <b-nav-item>
-                        <i class="el-icon-goods"></i>
+                        <i class="el-icon-goods" @click="$router.push({name: 'Card'})"></i>
 <!--                        <el-button circle plain icon="el-icon-goods"-->
 <!--                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; touch-action: auto;color: white">-->
 <!--                        </el-button>-->

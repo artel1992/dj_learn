@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-row data-aos="fade-up" justify="center" type="flex">
-            <el-col data-aos-delay="5000" :lg="4">
+            <el-col data-aos-delay="5000" :lg="14" align="middle">
                 <h3 style="font-family: 'Bebas Neue-Regular'; padding-top: 50px">
                     The Mercedes-Benz AG at a glance.
                 </h3>

@@ -17,7 +17,7 @@
                             <el-image :src="image"></el-image>
                         </el-carousel-item>
                     </el-carousel>
-                    <b-button href="#" variant="secondary" style="display: flex; justify-content: center; ">Info
+                    <b-button href="#" variant="secondary" style="display: flex; justify-content: center; " @click="$router.push({name: 'Car', params:{id:1}})">Info
                     </b-button>
                 </b-card>
             </el-col>
