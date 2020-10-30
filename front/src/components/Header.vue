@@ -13,7 +13,7 @@
                     <b-nav-item @click="$router.push({name:'Cars'})" href="#">CARS</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav>
-                    <b-nav-item href="#">BENZ WORLD</b-nav-item>
+                    <b-nav-item @click="$router.push({name:'Story'})" href="#">BENZ WORLD</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <b-nav-form>

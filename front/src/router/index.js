@@ -4,6 +4,7 @@ import Main from "../components/Main";
 import Cars from "../components/Cars";
 import Car from "../components/Car";
 import Card from "../components/Card"
+import Story from "../components/Story";
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
         path: '/card',
         name: 'card',
         component: Card
+    },
+    {
+        path: '/story',
+        name: 'Story',
+        component: Story
     }
 ]
 
