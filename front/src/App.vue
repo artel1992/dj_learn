@@ -1,7 +1,11 @@
 <template>
     <div class="background">
         <Header></Header>
-        <router-view></router-view>
+        <el-row type="flex" justify="center">
+            <el-col :lg="14">
+                <router-view></router-view>
+            </el-col>
+        </el-row>
         <Footer></Footer>
     </div>
 </template>

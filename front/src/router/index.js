@@ -26,7 +26,7 @@ const routes = [
     },
     {
         path: '/card',
-        name: 'card',
+        name: 'Card',
         component: Card
     },
     {

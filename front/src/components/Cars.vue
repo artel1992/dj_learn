@@ -1,16 +1,16 @@
 <template>
     <div>
         <el-row justify="center" type="flex">
-            <el-col :lg="6" :sm="24" align="middle">
+            <el-col :xl="6" :sm="24" align="middle">
                 <p data-aos="fade-right" style="font-size: 30pt; font-family: 'Bebas Neue-Bold';">
                     Cars Model
                 </p>
             </el-col>
         </el-row>
-        <el-row type="flex" justify="center"
-                style="justify-content: center !important; display: flex !important; padding-top: 50px; padding-bottom: 50px;">
-            <el-col :lg="7" :sm="24" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif; margin-right: 30px !important;">
+        <el-row
+               >
+            <el-col :lg="12" align="middle"
+                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
                 <b-card
                         img-alt="Image"
                         img-top
@@ -29,8 +29,8 @@
                     </el-carousel>
                 </b-card>
             </el-col>
-            <el-col :lg="7" :sm="24" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif; float: left !important;">
+            <el-col :lg="12" align="middle"
+                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
                 <b-card
                         img-alt="Image"
                         img-top
@@ -47,10 +47,10 @@
                 </b-card>
             </el-col>
         </el-row>
-        <el-row type="flex" justify="center"
-                style="justify-content: center !important; display: flex !important; padding-top: 10px; padding-bottom: 10px;">
-            <el-col :lg="7" :sm="24" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif; margin-right: 30px !important;">
+        <el-row
+              >
+            <el-col :lg="12" align="middle"
+                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
                 <b-card
                         img-alt="Image"
                         img-top
@@ -69,8 +69,8 @@
                 </b-card>
 
             </el-col>
-            <el-col :lg="7" :sm="24" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif; float: left !important;">
+            <el-col :lg="12" align="middle"
+                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
                 <b-card
                         img-alt="Image"
                         img-top

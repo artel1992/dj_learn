@@ -37,14 +37,17 @@
     font-family: "RopaSans-Regular";
     src: url("./../fonts/RopaSans-Regular.ttf") format("opentype");
 }
+
 @font-face {
     font-family: "OpenSans-Regular";
     src: url("./../fonts/OpenSans-Regular.ttf") format("opentype");
 }
+
 @font-face {
     font-family: "Anton-Regular";
     src: url("./../fonts/Anton-Regular.ttf") format("opentype");
 }
+
 @font-face {
     font-family: "PTSansNarrow-Regular";
     src: url("./../fonts/PTSansNarrow-Regular.ttf") format("opentype");
@@ -67,7 +70,8 @@
         background: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
     }
 }
-@media (min-width:  1200px) {
+
+@media (min-width: 1200px) {
     .navbar {
         padding: 0 21%;
     }
@@ -210,11 +214,18 @@
 .el-carousel__item:nth-child(2n+1) {
     background-color: transparent !important;
 }
+
 .mb-5:hover {
     box-shadow: 0px 1px 6px 0px rgba(60, 64, 67, 0.3), 0px 2px 6px 2px rgba(60, 64, 67, 0.15);
     transform: translateY(-3px) !important;
 }
+
 .mb-1:hover {
     box-shadow: 0px 1px 6px 0px rgba(60, 64, 67, 0.3), 0px 2px 6px 2px rgba(60, 64, 67, 0.15);
     transform: translateY(-3px) !important;
 }
+
+/*p {*/
+/*    font-family: 'Bebas Neue-Regular';*/
+/*    font-size: 20pt;*/
+/*}*/

@@ -35,6 +35,7 @@
             </b-collapse>
         </b-navbar>
         <b-carousel
+                v-if="$route.name!=='Car' && $route.name!== 'Card'"
                 id="carousel-fade"
                 fade
                 :indicators="false"
@@ -85,6 +86,7 @@
         },
         created() {
             AOS.init({disable: ""});
+            console.log(this.$route.name)
         },
     }
 </script>
