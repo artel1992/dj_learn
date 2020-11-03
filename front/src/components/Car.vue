@@ -1,14 +1,14 @@
 <template>
     <div>
         <el-row>
-            <el-col>
-                <b-img fluid-grow :src="require('./../assets/C-class/BC.jpeg')"></b-img>
-            </el-col>
+<!--            <el-col>-->
+<!--                <b-img fluid-grow :src="require('./../assets/C-class/BC.jpeg')"></b-img>-->
+<!--            </el-col>-->
         </el-row>
         <el-row type="flex" justify="center">
-            <el-col :lg="18" align="middle">
-                <p style="font-size: 16pt;font-family: 'TRY Clother Black';">C-Class.</p>
-                <p style="font-size: 24pt;font-family: 'TRY Clother Black';">Don't stop there.</p>
+            <el-col :lg="18">
+                <p style="font-size: 16pt;font-family: 'CircularStd-Bold', sans-serif;">C-Class.</p>
+                <p style="font-size: 24pt;font-family: 'CircularStd-Bold', sans-serif;">Don't stop there.</p>
             </el-col>
         </el-row>
         <el-row justify="center" type="flex">
@@ -36,5 +36,6 @@
 </script>
 
 <style scoped>
+
 
 </style>

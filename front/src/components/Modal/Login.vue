@@ -95,6 +95,6 @@
 
 <style scoped>
     h2 {
-        font-family: "TRY Clother Black", sans-serif;
+        font-family: "CircularStd-Bold", sans-serif;
     }
 </style>

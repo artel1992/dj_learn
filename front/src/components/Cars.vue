@@ -2,15 +2,15 @@
     <div>
         <el-row justify="center" type="flex">
             <el-col :xl="6" :sm="24" align="middle">
-                <p data-aos="fade-right" style="font-size: 30pt; font-family: 'Bebas Neue-Bold';">
+                <p data-aos="fade-right" style="font-size: 20pt; font-family: 'CircularStd-Bold';">
                     Cars Model
                 </p>
             </el-col>
         </el-row>
         <el-row
                >
-            <el-col :lg="12" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
+            <el-col :lg="12"  :md="12" :sm="12" align="middle"
+                    >
                 <b-card
                         img-alt="Image"
                         img-top
@@ -29,8 +29,8 @@
                     </el-carousel>
                 </b-card>
             </el-col>
-            <el-col :lg="12" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
+            <el-col :lg="12" :md="12" :sm="12" align="middle"
+                  >
                 <b-card
                         img-alt="Image"
                         img-top
@@ -49,8 +49,8 @@
         </el-row>
         <el-row
               >
-            <el-col :lg="12" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
+            <el-col :lg="12" :md="12" :sm="12" align="middle"
+                   >
                 <b-card
                         img-alt="Image"
                         img-top
@@ -69,8 +69,8 @@
                 </b-card>
 
             </el-col>
-            <el-col :lg="12" align="middle"
-                    style="font-family: 'PTSansNarrow-Regular', sans-serif;">
+            <el-col :lg="12" :md="12" :sm="12" align="middle"
+                   >
                 <b-card
                         img-alt="Image"
                         img-top

@@ -2,13 +2,13 @@
     <div>
         <el-row data-aos="fade-up" justify="center" type="flex">
             <el-col data-aos-delay="5000" :lg="14" align="middle">
-                <h3 style="font-family: 'Bebas Neue-Regular'; padding-top: 50px">
+                <h3 style="font-family: 'CircularStd-Bold'; padding-top: 50px">
                     The Mercedes-Benz AG at a glance.
                 </h3>
             </el-col>
         </el-row>
         <el-row data-aos="fade-up" type="flex" justify="center">
-            <el-col data-aos-delay="5000" :lg="14" style="font-family: 'Bebas Neue-Regular'; padding: 50px 0 20px 0">
+            <el-col data-aos-delay="5000" :lg="14" style="font-family: 'CircularStd-Bold'; padding: 50px 0 20px 0">
                 <p>
                     Mercedes-Benz AG is responsible for the global business of Mercedes-Benz Cars and Mercedes-Benz Vans
                     with over 173,000 employees world wide. Ola Källenius is Chairman of the Board of Management of
@@ -21,7 +21,7 @@
             </el-col>
         </el-row>
         <el-row data-aos="fade-up" type="flex" justify="center">
-            <el-col data-aos-delay="5000" :lg="14" style="font-family: 'Bebas Neue-Regular'; padding: 20px 0 20px 0">
+            <el-col data-aos-delay="5000" :lg="14" style="font-family: 'CircularStd-Bold'; padding: 20px 0 20px 0">
                 <p>
                     Mercedes-Benz AG is one of the largest manufacturers of premium passenger cars. In 2019 it sold
                     nearly 2.4 million cars and more than 438,000 vans. In its two business divisions, Mercedes-Benz AG
@@ -33,7 +33,7 @@
             </el-col>
         </el-row>
         <el-row data-aos="fade-up" type="flex" justify="center">
-            <el-col data-aos-delay="400" :lg="14" style="font-family: 'Bebas Neue-Regular'; padding: 20px 0 50px 0">
+            <el-col data-aos-delay="400" :lg="14" style="font-family: 'CircularStd-Bold'; padding: 20px 0 50px 0">
                 <p>
                     To the company, sustainability means creating value for all stakeholders on a lasting basis:
                     customers, employees, investors, business partners and the society as a whole. The basis for this is

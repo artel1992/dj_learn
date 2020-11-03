@@ -52,6 +52,14 @@
     font-family: "PTSansNarrow-Regular";
     src: url("./../fonts/PTSansNarrow-Regular.ttf") format("opentype");
 }
+@font-face {
+    font-family: "CircularStd-Book";
+    src: url("./../fonts/CircularStd-Book.ttf") format("opentype");
+}
+@font-face {
+    font-family: "CircularStd-Bold";
+    src: url("./../fonts/CircularStd-Bold.ttf") format("opentype");
+}
 
 /*@media (min-width: 1294px ) {*/
 /*    .navbar {*/
@@ -113,19 +121,18 @@
 }
 
 .navbar-brand {
-    font-family: "Bebas Neue-Bold", sans-serif;
+    font-family: "CircularStd-Bold", sans-serif;
     font-size: 12pt;
 }
 
 .nav-link {
-    font-family: "Bebas Neue-Bold", sans-serif;
-    font-size: 20pt;
+    font-family: "CircularStd-Bold", sans-serif;
+    font-size: 16pt;
     color: white !important;
-
 }
 
 .nav-link:hover {
-    color: black !important;
+    color: gray !important;
 }
 
 /*.navbar {*/
@@ -138,20 +145,20 @@
 /*}*/
 
 .nav-item {
-    font-family: "Bebas Neue-Bold", sans-serif;
+    font-family: "CircularStd-Bold", sans-serif;
     font-size: 18pt;
 }
 
 .el-icon-user:hover {
-    color: black !important;
+    color: gray !important;
 }
 
 .el-icon-goods:hover {
-    color: black !important;
+    color: gray !important;
 }
 
 .mr-sm-3 {
-    font-family: "FontAwesome", sans-serif;
+    font-family: "CircularStd-Book", sans-serif;
     font-size: 12pt;
     color: white !important;
 }
