@@ -2,88 +2,30 @@
     <div>
         <el-row justify="center" type="flex">
             <el-col :xl="6" :sm="24" align="middle">
-                <p data-aos="fade-right" style="font-size: 20pt; font-family: 'CircularStd-Bold';">
-                    Cars Model
-                </p>
+                <h2 data-aos="fade-right">
+                    {{$route.name}}
+                </h2>
             </el-col>
         </el-row>
         <el-row
-               >
-            <el-col :lg="12"  :md="12" :sm="12" align="middle"
-                    >
+        >
+            <el-col :lg="12" :md="12" :sm="12" align="middle"
+                    v-for="car in cars"
+                    :key="car.id"
+            >
                 <b-card
-                        img-alt="Image"
-                        img-top
+                        :footer="car.model + '. ' + car.year + '. € ' + car.price"
                         tag="article"
-                        style="max-width: 30rem; cursor: pointer; border: none;"
-                        class="mb-5"
+                        class="car mb-5"
                         data-aos="zoom-in-right"
-                        @click="$router.push({name: 'Car', params:{id:1}})"
+                        @click="$router.push({name: 'Car', params:{id: car.id}})"
                 >
-                    <span class="demonstration"></span>
-                    <el-carousel height="250px" :autoplay="false" arrow="never">
-
-                        <el-carousel-item v-for="image in images" :key="image">
+                    <el-carousel :autoplay="false" arrow="never">
+                        <el-carousel-item v-for="image in car.images" :key="image">
                             <el-image :src="image"></el-image>
                         </el-carousel-item>
                     </el-carousel>
-                </b-card>
-            </el-col>
-            <el-col :lg="12" :md="12" :sm="12" align="middle"
-                  >
-                <b-card
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 30rem; cursor: pointer; border: none;"
-                        class="mb-5"
-                        data-aos="zoom-in-left"
-                >
-                    <el-carousel height="250px" :autoplay="false" arrow="never">
-                        <el-carousel-item v-for="photo in photos" :key="photo">
-                            <el-image :src="photo"></el-image>
-                        </el-carousel-item>
-                    </el-carousel>
-                </b-card>
-            </el-col>
-        </el-row>
-        <el-row
-              >
-            <el-col :lg="12" :md="12" :sm="12" align="middle"
-                   >
-                <b-card
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 30rem; cursor: pointer; border: none;"
-                        class="mb-1"
-                        data-aos="zoom-in-right"
-                >
-                    <span class="demonstration"></span>
-                    <el-carousel height="250px" :autoplay="false" arrow="never">
-
-                        <el-carousel-item v-for="sekil in sekils" :key="sekil">
-                            <el-image :src="sekil"></el-image>
-                        </el-carousel-item>
-                    </el-carousel>
-                </b-card>
-
-            </el-col>
-            <el-col :lg="12" :md="12" :sm="12" align="middle"
-                   >
-                <b-card
-                        img-alt="Image"
-                        img-top
-                        tag="article"
-                        style="max-width: 30rem; cursor: pointer; border: none;"
-                        class="mb-1"
-                        data-aos="zoom-in-left"
-                >
-                    <el-carousel height="250px" :autoplay="false" arrow="never">
-                        <el-carousel-item v-for="picture in pictures" :key="picture">
-                            <el-image :src="picture"></el-image>
-                        </el-carousel-item>
-                    </el-carousel>
+                     <span class="card_title">Mercedes-Benz</span>
                 </b-card>
             </el-col>
         </el-row>
@@ -94,26 +36,64 @@
         name: "Cars",
         data() {
             return {
-                images: [
-                    require('./../assets/Buy/C-class1.png'),
-                    require('./../assets/Buy/C-class2.png'),
-                    require('./../assets/Buy/C-class3.png')
-                ],
-                photos: [
-                    require('./../assets/Buy/cla1.png'),
-                    require('./../assets/Buy/cla2.png'),
-                    require('./../assets/Buy/cla3.png')
-                ],
-                pictures: [
-                    require('./../assets/Buy/E-class1Uni.png'),
-                    require('./../assets/Buy/E-class2Uni.png'),
-                    require('./../assets/Buy/E-class3Uni.png')
-                ],
-                sekils: [
-                    require('./../assets/Buy/S-class1.png'),
-                    require('./../assets/Buy/S-class2.png'),
-                ],
+                cars: [
+                    {
+                        id: 1,
+                        title: 'Mercedes-Benz',
+                        price: 30000,
+                        year: 2020,
+                        body_type: 0,
+                        model: 'C-Class',
+                        images:
+                            [
+                                require('./../assets/Buy/C-class1.png'),
+                                require('./../assets/Buy/C-class2.png'),
+                                require('./../assets/Buy/C-class3.png')
+                            ]
+                    },
+                    {
+                        id: 2,
 
+                        title: 'Mercedes-Benz',
+                        price: 30000,
+                        year: 2020,
+                        body_type: 0,
+                        model: 'CLA',
+                        images:
+                            [
+                                require('./../assets/Buy/cla1.png'),
+                                require('./../assets/Buy/cla2.png'),
+                                require('./../assets/Buy/cla3.png')
+                            ]
+                    },
+                    {
+                        id: 3,
+                        title: 'Mercedes-Benz',
+                        price: 30000,
+                        year: 2020,
+                        body_type: 0,
+                        model: 'E-Class',
+                        images:
+                            [
+                                require('./../assets/Buy/E-class1Uni.png'),
+                                require('./../assets/Buy/E-class2Uni.png'),
+                                require('./../assets/Buy/E-class3Uni.png')
+                            ]
+                    },
+                    {
+                        id: 4,
+                        title: 'Mercedes-Benz',
+                        price: 30000,
+                        year: 2020,
+                        body_type: 1,
+                        model: 'S-Class',
+                        images:
+                            [
+                                require('./../assets/Buy/S-class1.png'),
+                                require('./../assets/Buy/S-class2.png')
+                            ]
+                    },
+                ],
             }
         }
     }

@@ -10,7 +10,7 @@
                     <b-nav-item @click="$router.push({name:'Main'})" href="#">Home</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav>
-                    <b-nav-item @click="$router.push({name:'Cars'})" href="#">Cars</b-nav-item>
+                    <b-nav-item @click="$router.push({name:'Cars model'})" href="#">Cars</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav>
                     <b-nav-item @click="$router.push({name:'Story'})" href="#">Benz World</b-nav-item>
@@ -21,15 +21,9 @@
                     </b-nav-form>
                     <b-nav-item>
                         <i class="el-icon-goods" @click="$router.push({name: 'Card'})"></i>
-                        <!--                        <el-button circle plain icon="el-icon-goods"-->
-                        <!--                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; touch-action: auto;color: white">-->
-                        <!--                        </el-button>-->
                     </b-nav-item>
                     <b-nav-item>
                         <i v-b-modal.login class="el-icon-user"></i>
-                        <!--                        <el-button v-b-modal.login icon="el-icon-user"-->
-                        <!--                                   style="border: 0 solid; background: none; font-size: 1em; outline: 0 !important; color: white;">-->
-                        <!--                        </el-button>-->
                     </b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
