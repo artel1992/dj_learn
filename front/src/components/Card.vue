@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <p class="lorem">Привет.</p>
     </div>
 </template>
 
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+ .lorem  {
+     font-family: "Jost-SemiBold", sans-serif;
+ }
 </style>

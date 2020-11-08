@@ -24,6 +24,11 @@
 }
 
 @font-face {
+    font-family: "Jost-SemiBold";
+    src: url("./../fonts/Jost-SemiBold.ttf") format("opentype");
+}
+
+@font-face {
     font-family: "Socialico-Regular";
     src: url("./../fonts/Socialico-Regular.otf") format("opentype");
 }
@@ -43,10 +48,10 @@
     src: url("./../fonts/OpenSans-Regular.ttf") format("opentype");
 }
 
-@font-face {
-    font-family: "Anton-Regular";
-    src: url("./../fonts/Anton-Regular.ttf") format("opentype");
-}
+/*@font-face {*/
+/*    font-family: "Anton-Regular";*/
+/*    src: url("./../fonts/Anton-Regular.ttf") format("opentype");*/
+/*}*/
 
 @font-face {
     font-family: "PTSansNarrow-Regular";
@@ -236,7 +241,8 @@
 }
 
 h2 {
-    font-family: "CircularStd-Book", sans-serif;
+    font-family: "CircularStd-Bold", sans-serif;
+    font-size: 35pt;
 }
 
 .card_title {
@@ -249,5 +255,11 @@ h2 {
 * {
      font-family: "CircularStd-Bold", sans-serif;
 
+}
+.model {
+    font-size: 18pt;
+}
+.mrk {
+    font-size: 24pt;
 }
 

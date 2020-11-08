@@ -29,8 +29,7 @@
             </b-collapse>
         </b-navbar>
         <b-carousel
-                v-if="$route.name!== 'Card'"
-                id="carousel-fade"
+                    id="carousel-fade"
                 fade
                 :indicators="false"
                 img-width="1024"
@@ -75,20 +74,19 @@
         methods: {
             getNavClass() {
                 console.log(window.screenY)
-            }
-        },
-        mounted() {
-            AOS.init({disable: ""});
-
-        },
-        watch: {
-            $route(to, from) {
+            },
+            init() {
                 if (this.$route.name === 'Car') {
                     this.image_list = [
-                        require('./../assets/C-class/BC.jpeg')
+                        require('./../assets/C-class/C-classBC.jpeg')
                     ]
-                    console.log(to, from)
-                } else {
+                } else if (this.$route.name === 'Card') {
+                    this.image_list = [
+                        require('./../assets/C-class/Shop2.jpeg')
+                    ]
+                }
+
+                else {
                     this.image_list = [
                         require('./../assets/Mercedes-Benz/C-class.jpeg'),
                         require('./../assets/Mercedes-Benz/E-class2.jpeg'),
@@ -96,6 +94,17 @@
                         require('./../assets/Photo/Merckarusel.jpg'),
                     ]
                 }
+            },
+        },
+        mounted() {
+            AOS.init({disable: ""});
+            this.init()
+
+        },
+        watch: {
+            $route(to, from) {
+                this.init()
+                console.log(to, from)
             }
         }
     }
